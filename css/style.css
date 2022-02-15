@@ -160,8 +160,8 @@ span{
 }
 
 .header-right-item-link{
-
-
+    display: flex;
+    align-items: center;
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -171,6 +171,18 @@ span{
     color: var(--accent-color);
 
 }
+
+.icon-mail{
+    fill:#757575;
+    width:16px;
+    height:12px;
+    margin-right: 10px;
+}
+
+.icon-mail:hover{
+    fill:var(--color-hover);
+}
+
 
 .header-nav .header-nav-item-link.current{
     color: var(--color-hover);
@@ -560,5 +572,4 @@ border-radius: 0px 0px 4px 4px;
 .portfolio-text:focus{
     color: var(--color-hover);
 }
-
 
