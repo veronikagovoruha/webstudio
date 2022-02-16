@@ -198,6 +198,33 @@ span {
   color: var(--color-hover);
 }
 
+
+/* modal */
+.backdrop{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);;
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+
+}
+
 /* footer */
 .footer {
   padding-top: 60px;
@@ -360,6 +387,18 @@ span {
 .banner-button:focus,
 .banner-button:hover {
   opacity: 0.9;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #ffffff;
+}
+
+.icon-close{
+  width: 30px;
+  height: 30px;
 }
 
 /* features */
