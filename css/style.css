@@ -135,7 +135,6 @@ span {
 
 .header-nav-item-link {
   display: block;
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -176,7 +175,6 @@ span {
 .header-right-item-link {
   display: flex;
   align-items: center;
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -228,7 +226,6 @@ span {
 }
 
 .footer-link-adress {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -240,7 +237,6 @@ span {
 
 .footer-link-mail,
 .footer-link-tel {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -258,6 +254,7 @@ span {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-wrapper-left {
@@ -266,7 +263,6 @@ span {
 
 .footer-title {
   display: flex;
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -279,7 +275,6 @@ span {
 .icon-footer-wrapper {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
   margin-top: 20px;
 }
 
@@ -292,10 +287,20 @@ span {
   width: 44px;
   height: 44px;
   color: #ffffff;
-  margin-right: 10px;
+
 }
 
-.icon-foooter-link:hover {
+.icon-footer-item{
+    margin-right: 10px;
+}
+
+.icon-footer-item:last-child{
+    margin-right: 0;
+
+}
+
+.icon-foooter-link:hover,
+.icon-foooter-link:focus {
   background-color: var(--color-hover);
 }
 
@@ -311,7 +316,6 @@ span {
   padding-bottom: 200px;
   padding-top: 200px;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -380,8 +384,7 @@ span {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
-  background-size: contain;
+  background-size: 70px 70px;
   background-position: center;
 }
 
@@ -466,7 +469,10 @@ span {
 }
 
 .team-wrapper {
+    display: flex;
+    flex-direction: column;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list {
@@ -541,6 +547,13 @@ span {
   color: #ffffff;
 }
 
+.team-list-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+
 /* .icon-team:last-child{
     margin-right: 0;
 } */
@@ -552,7 +565,6 @@ span {
 }
 
 .clients-title {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -565,10 +577,13 @@ span {
 .clients-list {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .clients-item {
   margin-right: 30px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-item:last-child {
@@ -577,12 +592,14 @@ span {
 
 .clients-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-top: 50px;
-  padding: 16px 32px;
   color: #afb1b8;
+  width: 100%;
+  height: 100%;
 }
 
 .clients-link:hover {
@@ -600,7 +617,6 @@ span {
 
 /* filter */
 .filter-button {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -618,11 +634,9 @@ span {
 .filter-button:hover,
 .filter-button:focus {
   color: #ffffff;
-  border: none;
   background: var(--color-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .filter-wrapper {
@@ -647,17 +661,16 @@ span {
 }
 
 .portfolio-item-title {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
+  width: 370px;
 }
 
 .portfolio-text {
-  font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.8;
@@ -679,6 +692,11 @@ span {
   text-decoration: none;
 }
 
+.portfolio-item:hover,
+.portfolio-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -690,11 +708,6 @@ span {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  opacity: 0.6;
 }
 
 .portfolio-item:nth-child(3n) {
