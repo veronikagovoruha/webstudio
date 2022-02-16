@@ -376,37 +376,8 @@ span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 30px;
-}
-
-.features-title-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-size: 70px 70px;
-  background-position: center;
-}
-
-.features-title-item:nth-child(1):before {
-  content: "";
-  background-image: url(../img/feature1.svg);
-  background-repeat: no-repeat;
-}
-.features-title-item:nth-child(2):before {
-  content: "";
-  background-image: url(../img/feature2.svg);
-  background-repeat: no-repeat;
-}
-.features-title-item:nth-child(3):before {
-  content: "";
-  background-image: url(../img/feature3.svg);
-  background-repeat: no-repeat;
-}
-.features-title-item:nth-child(4):before {
-  content: "";
-  background-image: url(../img/feature4.svg);
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .features-title {
@@ -436,6 +407,23 @@ span {
 
 .features-list {
   display: flex;
+}
+
+.icon-features-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-size: 270px 120px;
+  background-position: center;
+  
+}
+
+.icon-features{
+  width: 70px;
+  height: 70px;
 }
 
 /* do */
@@ -524,6 +512,14 @@ span {
   margin-top: 16px;
 }
 
+.team-item-icon{
+  margin-right: 10px;
+}
+
+.team-item-icon:last-child{
+  margin-right: 0;
+}
+
 .icon-team-link {
   display: flex;
   justify-content: center;
@@ -532,7 +528,7 @@ span {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: #757575;
+  color: #afb1b8;
 }
 
 .icon-team {
@@ -690,10 +686,11 @@ span {
 
 .portfolio-link {
   text-decoration: none;
+  display: block;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus{
+.portfolio-link:hover,
+.portfolio-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -717,9 +714,4 @@ span {
   margin-bottom: 0;
 }
 
-.portfolio-item-title:hover,
-.portfolio-text:hover,
-.portfolio-item-title:focus,
-.portfolio-text:focus {
-  color: var(--color-hover);
-}
+
