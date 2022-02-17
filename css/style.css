@@ -340,7 +340,9 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition-duration: 250ms;
 }
 
 .backdrop.is-hidden{
@@ -356,8 +358,11 @@ span {
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
+  overflow: hidden;
 
 }
+
+
 
 /* banner */
 .banner {
