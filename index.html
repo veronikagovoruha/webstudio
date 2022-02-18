@@ -62,10 +62,56 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="button button-icon-close" data-modal-close>
-                        <svg class="icon-close">
+                        <svg class="icon-team icon-close">
                             <use  href="./img/close-defs.svg#close"></use>
                         </svg>
                     </button>
+                    <div class="form-wrapper">
+                    <h2 class="form-main-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form class="form-order">
+                        <ul class="form-list">
+                            <li class="form-item">
+                                
+                                <label class="form-label" for="name">Имя</label>
+                                <input class="form-input form-name" id="name" type="text" name="name">
+                                <svg class="icon-team icon-form">
+                                    <use  href="./img/main-form-defs.svg#person-form"></use>
+                                </svg>
+                            </li>
+                            <li class="form-item">
+                                <label class="form-label" for="tel">Телефон</label>
+                                <input class="form-input form-tel" id="tel" type="tel" name="tel">
+                                <svg class="icon-team icon-form">
+                                    <use  href="./img/main-form-defs.svg#phone-form"></use>
+                                </svg>
+                            </li>
+                            <li class="form-item">
+                                
+                                <label class="form-label" for="email">Почта</label>
+                                <input class="form-input form-mail" id="email" type="email" name="email">
+                                <svg class="icon-team icon-form">
+                                    <use  href="./img/main-form-defs.svg#email-form"></use>
+                                </svg>
+                            </li>
+                            <li class="form-item">
+                                <label class="form-label" for="comment">Комментарий</label>
+                                <textarea class="form-comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                            </li>
+                            <li class="form-item">
+                                <div class="checkbox-wrapper">
+                                    
+                                <svg class=" icon-check-icon  icon-check">
+                                    <use  href="./img/iconcheck-defs.svg#icon-check"></use>
+                                </svg>
+                                <input type="checkbox" class="form-policy" name="policy" id="policy">
+                                <label class="form-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a class="form-policy-link" href="">Условия договора</a></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button-form-submit" type="submit">Отправить</button>
+                    </form>
+                </div>
+
                 </div>
             </div>
             </section>
@@ -367,7 +413,7 @@
             <address class="footer-adress">
                 <ul class="footer-list">
                     <li class="footer-item">
-                        <a target="_blank" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" class="footer-link-adress">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a target="_blank" rel="noopener noreferrer"  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" class="footer-link-adress">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li>
                         <a href="mailto:info@example.com" class="footer-link-mail">info@example.com</a>
@@ -408,12 +454,22 @@
                                 <use  href="./img/symbol-defs.svg#linkedin"></use>
                             </svg>
                         </a>
-                    </li>
-
-                    
-                
+                    </li>  
                 </ul>
         </div> 
+
+        <div class="footer-form">
+            <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+            <form class="footer-form-send">
+                <input class="footer-form-email" type="email" id="email" placeholder="E-mail">
+                <button class="footer-form-button" type="submit">
+                    <p class="footer-form-text">Подписаться</p> 
+                    <svg class="icon-footer-form">
+                        <use  href="./img/send-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </footer>
     
 
