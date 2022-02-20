@@ -69,45 +69,43 @@
                     <div class="form-wrapper">
                     <h2 class="form-main-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <form class="form-order">
-                        <ul class="form-list">
-                            <li class="form-item">
-                                
-                                <label class="form-label" for="name">Имя</label>
-                                <input class="form-input form-name" id="name" type="text" name="name">
+                        <div class="form-order-wrapper">
+                                <label class="form-label">Имя 
+                                    <input class="form-input form-name" type="text" name="name">
+                                </label>
                                 <svg class="icon-team icon-form">
                                     <use  href="./img/main-form-defs.svg#person-form"></use>
                                 </svg>
-                            </li>
-                            <li class="form-item">
-                                <label class="form-label" for="tel">Телефон</label>
-                                <input class="form-input form-tel" id="tel" type="tel" name="tel">
+                                </div>
+
+                                <div class="form-order-wrapper">
+                                <label class="form-label" for="tel">Телефон
+                                    <input class="form-input form-tel" id="tel" type="tel" name="tel">
+                                </label>
                                 <svg class="icon-team icon-form">
                                     <use  href="./img/main-form-defs.svg#phone-form"></use>
                                 </svg>
-                            </li>
-                            <li class="form-item">
+                                </div>
                                 
-                                <label class="form-label" for="email">Почта</label>
-                                <input class="form-input form-mail" id="email" type="email" name="email">
+                                <div class="form-order-wrapper">
+                                <label class="form-label" for="email">Почта
+                                    <input class="form-input form-mail" id="email" type="email" name="email">
+                                </label>
                                 <svg class="icon-team icon-form">
                                     <use  href="./img/main-form-defs.svg#email-form"></use>
                                 </svg>
-                            </li>
-                            <li class="form-item">
-                                <label class="form-label" for="comment">Комментарий</label>
-                                <textarea class="form-comment" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-                            </li>
-                            <li class="form-item">
+                                </div>
+
+                                <label class="form-label" >Комментарий
+                                    <textarea class="form-comment" name="comment" rows="10" placeholder="Введите текст"></textarea>
+                                </label>
+                                
+                            
                                 <div class="checkbox-wrapper">
-                                    
-                                <svg class=" icon-check-icon  icon-check">
-                                    <use  href="./img/iconcheck-defs.svg#icon-check"></use>
-                                </svg>
                                 <input type="checkbox" class="form-policy" name="policy" id="policy">
+                                <span class="check-box"></span>
                                 <label class="form-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a class="form-policy-link" href="">Условия договора</a></label>
                                 </div>
-                            </li>
-                        </ul>
                         <button class="button-form-submit" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -311,7 +309,7 @@
                     <li class="team-item">
                         <img class="team-image" width="270" src="img/team4.jpg" alt="Михаил Ермаков">
                         <div class="team-wrapper">
-                            <h3 class="team-title-name">Михаил Ермаков</h4>
+                            <h3 class="team-title-name">Михаил Ермаков</h3>
                             <p class="team-text">UI Designer</p>
                             <ul class="team-list-icon">
                                 <li class="team-item-icon">
@@ -461,14 +459,14 @@
         <div class="footer-form">
             <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
             <form class="footer-form-send">
-                <input class="footer-form-email" type="email" id="email" placeholder="E-mail">
-                <button class="footer-form-button" type="submit">
-                    <p class="footer-form-text">Подписаться</p> 
+                <input class="footer-form-email" type="email" placeholder="E-mail">
+                <button class="footer-form-button" type="submit">Подписаться
                     <svg class="icon-footer-form">
                         <use  href="./img/send-defs.svg#icon-send"></use>
                     </svg>
                 </button>
             </form>
+        </div>
         </div>
     </footer>
     
