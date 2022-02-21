@@ -399,6 +399,17 @@ span {
   margin-bottom: 10px;
 }
 
+.footer-form-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-footer-form{
+  position: absolute;
+  right: 28px;
+}
+
 /* modal */
 .backdrop{
   position: fixed;
