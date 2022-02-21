@@ -711,13 +711,13 @@ span {
   overflow: hidden;
 }
 
-.checkbox-label {
+
+.checkbox-label{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-
 
 .checkbox-icon  {
   display: inline-block;
