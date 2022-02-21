@@ -735,6 +735,7 @@ span {
   background-image: url(../img/iconcheck.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 
