@@ -711,7 +711,7 @@ span {
   overflow: hidden;
 }
 
-.checkbox {
+.checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
