@@ -7,39 +7,40 @@
     <title>Document</title>
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
 </head>
 <body>
     <header class="header">
-        <div class="container wrapper">
+        <div class="container header-wrapper">
             <nav class="header-nav">
-                <a href="#" class="header-nav-logo">
-                    <span class="header-nav-current">Web</span>Studio
+                <a href="#" class="nav-logo">
+                    <span class="nav-current">Web</span>Studio
                 </a>
-                <ul class="header-nav-list">
-                    <li class="header-nav-item">
-                        <a href="./index.html" class="header-nav-item-link">Студия</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link current">Студия</a>
                     </li>
-                    <li class="header-nav-item">
-                        <a href="./portfolio.html" class="header-nav-item-link current">Портфолио</a>
+                    <li class="nav-item">
+                        <a href="./portfolio.html" class="nav-link">Портфолио</a>
                     </li>
-                    <li class="header-nav-item">
-                        <a href="#" class="header-nav-item-link ">Контакты</a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
     
             
-                <ul class="header-right-list header-right">
-                    <li class="header-right-item">
-                        <a href="mailto:info@devstudio.com" class="header-right-item-link">
+                <ul class="header-list header-add">
+                    <li class="header-item">
+                        <a href="mailto:info@devstudio.com" class="header-link">
                             <svg class="icon-mail">
                                 <use  href="./img/symbol-defs1.svg#header"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
-                    <li class="header-right-item">
-                        <a href="tel:+380961111111" class="header-right-item-link">
+                    <li class="header-item">
+                        <a href="tel:+380961111111" class="header-link">
                             <svg class="icon-mail">
                                 <use  href="./img/symbol-defs1.svg#header2"></use>
                             </svg>
@@ -276,11 +277,14 @@
             <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
             <form class="footer-form-send">
                 <input class="footer-form-email" type="email" placeholder="E-mail">
+                
+                <div class="footer-form-wrapper">
                 <button class="footer-form-button" type="submit">Подписаться
-                    <svg class="icon-footer-form">
-                        <use  href="./img/send-defs.svg#icon-send"></use>
-                    </svg>
                 </button>
+                <svg class="icon-footer-form">
+                    <use  href="./img/send-defs.svg#icon-send"></use>
+                </svg>
+                </div>
             </form>
         </div>
         </div>
