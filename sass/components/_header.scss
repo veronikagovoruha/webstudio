@@ -56,13 +56,11 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:hover,
-.nav-link:focus {
-  color: $color-hover;
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
 }
 
 .current::after {

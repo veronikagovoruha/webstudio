@@ -34,6 +34,11 @@
   color: #ffffff;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .footer-link-mail,
@@ -51,7 +56,8 @@
 
 .footer-link-mail:hover,
 .footer-link-tel:hover,
-.footer-link-adress:hover {
+.footer-link-mail:focus,
+.footer-link-tel:focus {
   opacity: 0.6;
 }
 
@@ -92,6 +98,11 @@
   color: #ffffff;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+  }
 }
 
 .icon-footer-item {
@@ -100,11 +111,6 @@
 
 .icon-footer-item:last-child {
   margin-right: 0;
-}
-
-.icon-foooter-link:hover,
-.icon-foooter-link:focus {
-  background-color: $color-hover;
 }
 
 .footer-form-send {

@@ -62,10 +62,10 @@
 
 .team-item-icon {
   margin-right: 10px;
-}
 
-.team-item-icon:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .icon-team-link {

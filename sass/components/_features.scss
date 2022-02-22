@@ -25,10 +25,10 @@
   margin-top: 30px;
   width: 270px;
   margin-bottom: 10px;
-}
 
-.features-title:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .features-text {
