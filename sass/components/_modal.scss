@@ -54,21 +54,25 @@
   margin-top: 4px;
 
   transition: border-color 250ms $timming-function;
-}
-.form-input:focus,
-.form-input:hover {
-  border-color: $color-hover;
-}
 
-.form-input:focus + .icon-form {
-  fill: $color-hover;
-  border-color: $color-hover;
+  &:focus,
+  &:hover {
+    border-color: $color-hover;
+  }
+
+  &:focus + .icon-form {
+    fill: $color-hover;
+    border-color: $color-hover;
+  }
 }
 
 .icon-form {
   position: absolute;
   top: 63%;
   left: 52px;
+  fill: #212121;
+  width: 20px;
+  height: 20px;
 
   transform: translateY(-50%);
 }
@@ -125,11 +129,12 @@
   padding-top: 12px;
 
   transition: border-color 250ms $color-hover;
+
+  &:focus {
+    border-color: $color-hover;
+  }
 }
 
-.form-comment:focus {
-  border-color: $color-hover;
-}
 .icon-check-icon {
   fill: currentColor;
   width: 11px;
