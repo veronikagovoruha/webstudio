@@ -9,6 +9,8 @@
   opacity: 1;
 
   transition: opacity 250ms $timming-function;
+
+  overflow-y: scroll;
 }
 
 .button-icon-close:hover {

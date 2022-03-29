@@ -1,6 +1,11 @@
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and(max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .features-item {
@@ -13,6 +18,18 @@
   margin-right: 30px;
   display: flex;
   flex-direction: column;
+
+  @media screen and(max-width: 767px) {
+    width: 450px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1599px) {
+    width: 354px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .features-title {
@@ -29,6 +46,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media screen and(max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .features-text {
@@ -42,6 +64,14 @@
 
 .features-list {
   display: flex;
+
+  @media screen and(max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1599px) {
+    flex-wrap: wrap;
+  }
 }
 
 .icon-features-wrapper {

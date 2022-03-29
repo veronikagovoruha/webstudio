@@ -2,6 +2,10 @@
   z-index: 1;
   padding-bottom: 94px;
   padding-bottom: 94px;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }
 
 .do-list {
