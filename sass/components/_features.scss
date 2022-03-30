@@ -9,7 +9,7 @@
 }
 
 .features-item {
-  width: 270px;
+  width: 100%;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and(max-width: 767px) {
-    width: 450px;
+  @media screen and(min-width: 767px) {
+    width: 100%;
     padding-bottom: 30px;
   }
 
