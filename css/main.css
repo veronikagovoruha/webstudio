@@ -289,12 +289,6 @@ summary {
   color: #212121;
 }
 
-@media screen and (max-width: 767px) {
-  .body {
-    overflow: hidden;
-  }
-}
-
 .body.modal-open {
   overflow: hidden;
 }
@@ -384,12 +378,6 @@ span {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    height: 100vh;
-  }
-}
-
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,13 +413,20 @@ span {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 767px) {
+  .nav-logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .nav-logo {
     font-size: 24px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .nav-logo {
     margin-right: 92px;
   }
@@ -731,8 +726,6 @@ span {
 @media screen and (max-width: 767px) {
   .menu-button {
     margin-left: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -785,8 +778,18 @@ span {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    height: 100vh;
+    width: 100vw;
+  }
+  .nav-menu_wrapper.is-open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
