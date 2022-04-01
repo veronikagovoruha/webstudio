@@ -26,16 +26,34 @@
 }
 
 .filter-wrapper {
+  margin-bottom: 40px;
+
   display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 50px;
+  justify-content: left;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-item {
   margin-right: 8px;
-}
+  margin-bottom: 15px;
 
-.filter-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
