@@ -62,12 +62,33 @@
 }
 
 .footer-wrapper {
-  display: flex;
-  align-items: baseline;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-wrapper-left {
   margin-right: 70px;
+
+  @media screen and(max-width: 767px) {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  @media screen and(min-width: 767px) and (max-width: 1199px) {
+    margin-right: 0;
+  }
+}
+
+.footer-wrapper-right {
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and(min-width: 767px) and (max-width: 1199px) {
+    margin-left: auto;
+  }
 }
 
 .footer-title {
@@ -79,6 +100,14 @@
   text-transform: uppercase;
   padding-left: 0;
   color: #ffffff;
+
+  @media screen and(max-width: 767px) {
+    justify-content: center;
+  }
+
+  @media screen and(min-width: 767px) and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .icon-footer-wrapper {
@@ -115,12 +144,21 @@
 
 .footer-form-send {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }
 
 .footer-form {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .footer-form-title {
@@ -144,9 +182,14 @@
   height: 50px;
   padding-left: 15px;
   color: rgba(255, 255, 255, 0.6);
+
+  // @media screen and (max-width: 1199px) {
+  //   width: 450px;
+  // }
 }
 
 .footer-form-button {
+  position: relative;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -183,9 +226,26 @@
   position: relative;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .icon-footer-form {
   position: absolute;
   right: 28px;
+}
+
+.footer-thumb {
+  @media screen and(min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: baseline;
+  }
 }

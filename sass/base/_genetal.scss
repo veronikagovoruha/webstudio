@@ -2,6 +2,10 @@
   font-family: $primary-font-family;
   background-color: #ffffff;
   color: $primary-text-color;
+
+  @media screen and(max-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 .body.modal-open {
