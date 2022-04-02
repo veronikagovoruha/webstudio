@@ -318,8 +318,6 @@
 
 .nav-menu_wrapper {
   display: flex;
-  // align-items: center;
-  // width: 100%;
 
   @media screen and(max-width: 767px) {
     flex-direction: column;
@@ -344,10 +342,6 @@
   @media screen and(min-width: 768px) {
     align-items: center;
   }
-
-  // @media screen and(min-width: 1200px) {
-  //   display: flex;
-  // }
 }
 
 .header-list__wrapper {
@@ -356,6 +350,9 @@
   }
 
   @media screen and(min-width: 767px) {
-    margin-left: auto;
+    margin-left: 63px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 301px;
   }
 }

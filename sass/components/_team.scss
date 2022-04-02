@@ -2,6 +2,11 @@
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and(max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .team-wrapper {
@@ -70,6 +75,11 @@
 .team-title {
   margin: 0;
   margin-bottom: 50px;
+
+  @media screen and(max-width: 1200px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .team-title-name {

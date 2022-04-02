@@ -810,7 +810,13 @@ span {
 
 @media screen and (min-width: 767px) {
   .header-list__wrapper {
-    margin-left: auto;
+    margin-left: 63px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-list__wrapper {
+    margin-left: 301px;
   }
 }
 
@@ -834,6 +840,13 @@ span {
   text-decoration: none;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-nav-logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .footer-list {
@@ -1044,6 +1057,12 @@ span {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form-email {
+    width: 358px;
+  }
+}
+
 .footer-form-button {
   position: relative;
   display: -webkit-box;
@@ -1083,7 +1102,12 @@ span {
 }
 
 .form-order-wrapper {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -1135,8 +1159,8 @@ span {
 
 .banner {
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("@/img/banner/banner-mobile.jpg");
-  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("@/img/banner/banner-mobile.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero-mobile.jpg");
+  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero-mobile.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1154,36 +1178,36 @@ span {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/banner-mobile@2x.jpg");
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/banner-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero-mobile@2x.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero-mobile@2x.jpg");
   }
 }
 
 @media (min-width: 480px) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/banner-tablet.jpg");
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/banner-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero-tablet.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero-tablet.jpg");
   }
 }
 
 @media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
   .banner .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/banner-tablet@2x.jpg");
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/banner-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero-tablet@2x.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero-tablet@2x.jpg");
   }
 }
 
 @media (min-width: 768px) {
   .banner {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/banner.jpg");
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/banner.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero.jpg");
   }
 }
 
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .banner .intro {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/banner@2x.jpg");
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/banner@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/banner/hero@2x.jpg");
+    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../img/banner/hero@2x.jpg");
   }
 }
 
@@ -1206,7 +1230,7 @@ span {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .banner-title {
     font-size: 26px;
     line-height: 1.6;
@@ -1352,7 +1376,7 @@ span {
 
 .backdrop {
   position: fixed;
-  z-index: 5;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -1383,13 +1407,19 @@ span {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 100%;
+  max-width: 528px;
   background-color: #ffffff;
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .form-wrapper {
@@ -1421,7 +1451,7 @@ span {
 .icon-form {
   position: absolute;
   top: 63%;
-  left: 52px;
+  left: 12px;
   fill: #212121;
   width: 20px;
   height: 20px;
@@ -1440,6 +1470,7 @@ span {
 }
 
 .form-label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1447,7 +1478,6 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 40px;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -1505,6 +1535,7 @@ span {
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 12px;
+  margin: 0 auto;
   -webkit-transition: border-color 250ms #2196f3;
   transition: border-color 250ms #2196f3;
 }
@@ -1534,7 +1565,7 @@ span {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1713,6 +1744,13 @@ span {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1200px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .team-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1801,6 +1839,13 @@ span {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .team-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 .team-title-name {
   font-weight: 500;
   font-size: 16px;
@@ -1877,7 +1922,7 @@ span {
   margin-top: 26px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1200px) {
   .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1923,6 +1968,13 @@ span {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-title {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.17;
   }
 }
 
@@ -2123,6 +2175,13 @@ span {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio-item-title {
