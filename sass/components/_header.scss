@@ -197,6 +197,9 @@
 }
 
 .header-link-tel {
+  @media screen and(min-width: 320px) {
+    font-size: 22px;
+  }
   @media screen and(max-width: 767px) {
     font-size: 34px;
     line-height: 1.1;
@@ -233,9 +236,8 @@
   margin-left: 40px;
   margin-top: 64px;
   margin-bottom: 48px;
-}
+  flex-wrap: wrap;
 
-.media-list {
   @media screen and(min-width: 767px) {
     display: none;
   }
