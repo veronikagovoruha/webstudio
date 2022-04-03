@@ -629,7 +629,15 @@ span {
 .header-link-tel {
   font-size: 14px;
   line-height: 1.1;
-  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-link-tel {
+    font-size: 34px;
+    line-height: 1.1;
+    padding-bottom: 32px;
+    color: #2196f3;
+  }
 }
 
 @media screen and (max-width: 767px) {
