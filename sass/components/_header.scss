@@ -131,15 +131,14 @@
 
 .header-list {
   display: flex;
-  padding: 0;
-  margin-left: auto;
 
   @media screen and(max-width: 767px) {
     flex-direction: column;
   }
 
-  @media screen and(min-width: 768px) and (max-width: 1199px) {
+  @media screen and(min-width: 768px) {
     flex-direction: column;
+    align-items: center;
   }
 
   @media screen and(min-width: 1200px) {
@@ -197,15 +196,19 @@
 }
 
 .header-link-tel {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-bottom: 32px;
+
   @media screen and(min-width: 320px) {
-    font-size: 22px;
+    // font-size: 22px;
   }
-  @media screen and(max-width: 767px) {
-    font-size: 34px;
-    line-height: 1.1;
-    padding-bottom: 32px;
-    color: #2196f3;
-  }
+  // @media screen and(max-width: 767px) {
+  //   font-size: 34px;
+  //   line-height: 1.1;
+  //   padding-bottom: 32px;
+  //   color: #2196f3;
+  // }
 }
 
 .header-link-mail {
