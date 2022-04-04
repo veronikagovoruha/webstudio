@@ -82,6 +82,7 @@
   }
 
   @media screen and(min-width: 767px) and (max-width: 1199px) {
+    text-align: center;
     margin-right: 0;
   }
 }
@@ -92,7 +93,7 @@
   }
 
   @media screen and(min-width: 767px) and (max-width: 1199px) {
-    margin-left: auto;
+    margin-left: 165px;
   }
 }
 
@@ -236,7 +237,7 @@
 .footer-thumb {
   @media screen and(min-width: 767px) and (max-width: 1199px) {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
   }
 
   @media screen and(min-width: 1200px) {
